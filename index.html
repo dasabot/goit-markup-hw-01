@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,13 +9,11 @@
     <body>
         <header>
             <div class="header-container">
-                <div class="logo">
-                    <a class="logo__text" href="#">
+                <nav class="header__navbar">
+                    <a class="logo" href="#">
                         <span class="logo__text logo__text_blue">Web</span>
                         <span class="logo__text">Studio</span>
                     </a>
-                </div>
-                <nav class="header__navbar">
                     <ul>
                         <li>
                             <a class="header__navbar-element"> Студія </a>
@@ -28,151 +26,164 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="header__contacts-block">
-                    <a href="mailto:info@devstudio.com" class="header__contact"
-                        >info@devstudio.com</a
-                    >
-                    <a href="tel:+38 096 111 11 11" class="header__contact"
-                        >+38 096 111 11 11</a
-                    >
-                </div>
+                <ul class="header__contacts-block">
+                    <li>
+                        <a
+                            href="mailto:info@devstudio.com"
+                            class="header__contact"
+                            >info@devstudio.com</a
+                        >
+                    </li>
+                    <li>
+                        <a href="tel:+38 096 111 11 11" class="header__contact"
+                            >+38 096 111 11 11</a
+                        >
+                    </li>
+                </ul>
             </div>
         </header>
         <main>
-            <div class="order">
+            <section class="order">
                 <h1>ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
                 <button class="order__button" type="button">
                     Замовити послугу
                 </button>
-            </div>
+            </section>
             <section>
-                <div class="articles">
-                    <div class="articles__item">
-                        <div class="articles__item-header">
-                            УВАГА ДО ДЕТАЛЕЙ
-                        </div>
-                        <div class="articles__item-text">
+                <h2> Наші пріорітети </h2> <!--Нема в макеті-->
+                <ul class="articles">
+                    <li class="articles__item">
+                        <h3 class="articles__item-header">УВАГА ДО ДЕТАЛЕЙ</h3>
+                        <p class="articles__item-text">
                             Ідейні міркування, і навіть початок повсякденної
                             роботи з формування позиції.
-                        </div>
-                    </div>
-                    <div class="articles__item">
-                        <div class="articles__item-header">ПУНКТУАЛЬНІСТЬ</div>
-                        <div class="articles__item-text">
+                        </p>
+                    </li>
+                    <li class="articles__item">
+                        <h3 class="articles__item-header">ПУНКТУАЛЬНІСТЬ</h3>
+                        <p class="articles__item-text">
                             Завдання організації, особливо рамки і місце
                             навчання кадрів тягне у себе.
-                        </div>
-                    </div>
-                    <div class="articles__item">
-                        <div class="articles__item-header">ПЛАНУВАННЯ</div>
-                        <div class="articles__item-text">
+                        </p>
+                    </li>
+                    <li class="articles__item">
+                        <h3 class="articles__item-header">ПЛАНУВАННЯ</h3>
+                        <p class="articles__item-text">
                             Так само консультація з широким активом значною
                             мірою зумовлює.
-                        </div>
-                    </div>
-                    <div class="articles__item">
-                        <div class="articles__item-header">
+                        </p>
+                    </li>
+                    <li class="articles__item">
+                        <h3 class="articles__item-header">
                             СУЧАСНІ ТЕХНОЛОГІЇ
-                        </div>
-                        <div class="articles__item-text">
+                        </h3>
+                        <p class="articles__item-text">
                             Значимість цих проблем настільки очевидна, що
                             реалізація планових завдань.
-                        </div>
-                    </div>
-                </div>
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section>
                 <h2>Чим ми займаємося</h2>
-                <div class="images-block">
-                    <img
-                        width="370px"
-                        height="294px"
-                        src="/images/img_1.jpg"
-                        alt="writting code"
-                    />
-                    <img
-                        width="370px"
-                        height="294px"
-                        src="/images/img_2.jpg"
-                        alt="check adaptability"
-                    />
-                    <img
-                        width="370px"
-                        height="294px"
-                        src="/images/img_3.jpg"
-                        alt="create design"
-                    />
-                </div>
+                <ul class="images-block">
+                    <li>
+                        <img
+                            width="370px"
+                            height="294px"
+                            src="./images/img_1.jpg"
+                            alt="writting code"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            width="370px"
+                            height="294px"
+                            src="./images/img_2.jpg"
+                            alt="check adaptability"
+                        />
+                    </li>
+                    <li>
+                        <img
+                            width="370px"
+                            height="294px"
+                            src="./images/img_3.jpg"
+                            alt="create design"
+                        />
+                    </li>
+                </ul>
             </section>
             <section>
                 <h2>Наша команда</h2>
-                <div class="team">
-                    <ul>
-                        <li class="team-card">
-                            <img
-                                width="270px"
-                                height="260px"
-                                class="team-card__photo"
-                                src="/images/img_4.jpg"
-                                alt="Product Designer"
-                            />
-                            <div class="team-card__name">Ігор Дем'яненко</div>
-                            <div class="team-card__profession">
-                                Product Designer
-                            </div>
-                        </li>
-                        <li class="team-card">
-                            <img
-                                width="270px"
-                                height="260px"
-                                class="team-card__photo"
-                                src="/images/img_5.jpg"
-                                alt="Frontend Developer"
-                            />
-                            <div class="team-card__name">Ольга Рєпіна</div>
-                            <div class="team-card__profession">
-                                Frontend Developer
-                            </div>
-                        </li>
-                        <li class="team-card">
-                            <img
-                                width="270px"
-                                height="260px"
-                                class="team-card__photo"
-                                src="/images/img_6.jpg"
-                                alt="Marketing"
-                            />
-                            <div class="team-card__name">Микола Тарасов</div>
-                            <div class="team-card__profession">Marketing</div>
-                        </li>
-                        <li class="team-card">
-                            <img
-                                width="270px"
-                                height="260px"
-                                class="team-card__photo"
-                                src="/images/img_7.jpg"
-                                alt="UI Designer"
-                            />
-                            <div class="team-card__name">Михайло Єрмаков</div>
-                            <div class="team-card__profession">UI Designer</div>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="team">
+                    <li class="team-card">
+                        <img
+                            width="270px"
+                            height="260px"
+                            class="team-card__photo"
+                            src="./images/img_4.jpg"
+                            alt="Product Designer"
+                        />
+                        <h3 class="team-card__name">Ігор Дем'яненко</h3>
+                        <p class="team-card__profession">Product Designer</p>
+                    </li>
+                    <li class="team-card">
+                        <img
+                            width="270px"
+                            height="260px"
+                            class="team-card__photo"
+                            src="./images/img_5.jpg"
+                            alt="Frontend Developer"
+                        />
+                        <h3 class="team-card__name">Ольга Рєпіна</h3>
+                        <p class="team-card__profession">Frontend Developer</p>
+                    </li>
+                    <li class="team-card">
+                        <img
+                            width="270px"
+                            height="260px"
+                            class="team-card__photo"
+                            src="./images/img_6.jpg"
+                            alt="Marketing"
+                        />
+                        <h3 class="team-card__name">Микола Тарасов</h3>
+                        <p class="team-card__profession">Marketing</p>
+                    </li>
+                    <li class="team-card">
+                        <img
+                            width="270px"
+                            height="260px"
+                            class="team-card__photo"
+                            src="./images/img_7.jpg"
+                            alt="UI Designer"
+                        />
+                        <h3 class="team-card__name">Михайло Єрмаков</h3>
+                        <p class="team-card__profession">UI Designer</p>
+                    </li>
+                </ul>
             </section>
         </main>
         <footer>
-            <div class="logo">
-                <a class="logo__text" href="#">
-                    <span class="logo__text logo__text_blue">Web</span>
-                    <span class="logo__text">Studio</span>
-                </a>
-            </div>
+            <a class="logo" href="#">
+                <span class="logo__text logo__text_blue">Web</span>
+                <span class="logo__text">Studio</span>
+            </a>
             <address>
-                <span>м. Київ, пр-т Лесі Українки, 26</span>
-                <a href="mailto:info@devstudio.com" class="footer-contact"
-                    >info@devstudio.com</a
-                >
-                <a href="tel:+38 096 111 11 11" class="footer-contact"
-                    >+38 096 111 11 11</a
-                >
+                <p>м. Київ, пр-т Лесі Українки, 26</p>
+                <ul>
+                    <li>
+                        <a
+                            href="mailto:info@devstudio.com"
+                            class="footer-contact"
+                            >info@devstudio.com</a
+                        >
+                    </li>
+                    <li>
+                        <a href="tel:+38 096 111 11 11" class="footer-contact"
+                            >+38 096 111 11 11</a
+                        >
+                    </li>
+                </ul>
             </address>
         </footer>
     </body>
